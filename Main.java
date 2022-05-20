@@ -62,12 +62,12 @@ class Kingdom {
         }
         return false;
     }
-
+//updating wall strength
     public void updateWallStrength(String direction, int strength) {
         Wall w = allWalls.get(direction);
         w.setHeight(strength);
     }
-
+//updating wall intensity
     public void updateWallIntensity() {
         while (true) {
             Scanner scn = new Scanner(System.in);
@@ -150,7 +150,7 @@ class inputClass{
         }
         return false;
     }
-
+//calculating successful attack
     public int calculateSuccesfulAttack() {
         String[] arrString = inputStr.split(";");
         int noOfDays = arrString.length;
